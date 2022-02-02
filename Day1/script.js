@@ -1,19 +1,17 @@
-const sketchName = '100DaysSketch';
 let c;
+let container = document.querySelector('#canvasContainer');
 
 function setup() {
   c = createCanvas(960, 540);
+  c.parent(container);
   colorMode(HSB, 360, 100, 100, 10);
   noLoop();
 }
 
 function draw() {
   background(0);
-}
-
-function keyPressed() {
-  if(key === 'S' || key === 's') {
-    let date = new Date();
-    saveCanvas(c, sketchName + '_' + 1+date.getMonth() + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds(), 'jpg');
-  }
+  let x = width/2;
+  let y = height/2;
+  stroke(100);
+  point(x, y);
 }
