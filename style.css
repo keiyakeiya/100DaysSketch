@@ -1,4 +1,4 @@
-html {
+/* html {
   height: 100%;
 }
 
@@ -8,8 +8,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 main {
   display: none;
+}
+
+body {
+  padding: 0 20%;
+}
+
+#canvasContainer {
+  width:100%;
+  transform:scale(0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
